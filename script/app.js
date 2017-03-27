@@ -7,17 +7,17 @@ app.controller('primeCtrl',function($scope){
 
         {
         	
-            var flag=0;
+            var prime=0;
             for(var j=2;j<i;j++)
             {
             	
                 if(i%j==0)
                 {
                 	
-                    flag=1;
+                    prime=1;
                 }
             }
-            if(flag==0){
+            if(prime==0){
             	 $scope.result.push(i);
             	 console.log("hhh",i)
                
